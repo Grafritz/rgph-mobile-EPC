@@ -1,0 +1,1 @@
+include ':app', ':rgph-mobile-epc-dao-generator'
