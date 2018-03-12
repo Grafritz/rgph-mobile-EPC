@@ -14,7 +14,9 @@ import java.util.regex.Pattern;
 
 import ht.ihsi.rgph.mobile.epc.Constant.Constant;
 import ht.ihsi.rgph.mobile.epc.Exceptions.TextEmptyException;
+import ht.ihsi.rgph.mobile.epc.Mappers.ModelMapper;
 import ht.ihsi.rgph.mobile.epc.Models.KeyValueModel;
+import ht.ihsi.rgph.mobile.epc.Models.PersonnelModel;
 import ht.ihsi.rgph.mobile.epc.R;
 
 
@@ -80,9 +82,9 @@ public class Tools
 
     public static Shared_Preferences SharedPreferences(Context context){ return new Shared_Preferences(context); }
 
-    /*public static void StoreInfoPresonnel_PreferenceManager(Context context,  PersonnelModel personnelModel){
+    public static void StoreInfoPresonnel_PreferenceManager(Context context,  PersonnelModel personnelModel){
         ModelMapper.MapToPreferences( context, personnelModel);
-    }*/
+    }
 
     public static boolean CheckPrefIsUseConnected(Context context) {
         return SharedPreferences(context).getIsConnected();

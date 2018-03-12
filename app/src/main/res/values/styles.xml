@@ -8,4 +8,62 @@
         <item name="colorAccent">@color/primaryLightColor</item>
     </style>
 
+
+    <style name="AppMyTheme_NoActionBar" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/theme_accent_1</item>
+        <!--<item name="android:textColorPrimary">@color/colorWhite</item>-->
+
+        <!--<item name="android:navigationBarColor" tools:targetApi="lollipop">@android:color/transparent</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent</item>-->
+
+        <!-- Style FOR SPINNER -->
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item>
+        <item name="android:spinnerStyle">@style/DropDownSpinnerStyle</item>
+        <!-- Style TabHost ViewPager -->
+        <!--<item name="@attr/customTextViewStyle">@style/CustomTextView</item>-->
+    </style>
+
+
+    <!-- Style FOR SPINNER -->
+    <style name="customtheme" parent="@android:style/Theme.Light">
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item>
+    </style>
+
+    <style name="SpinnerItem">
+        <!--<item name="android:textColor">@color/colorBlack</item>
+        <item name="android:background">@drawable/shape_rectangle</item>-->
+        <item name="android:textColor">@color/colorRed</item>
+        <item name="android:background">@color/primaryColor</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <!--<item name="android:popupBackground">@null</item>-->
+    </style>
+
+    <style name="SpinnerDropDownItem">
+        <!-- Style des elements qui est afficher dans le PopUp -->
+        <item name="android:textSize">20dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <!--<item name="android:background">@color/colorWhite</item>-->
+    </style>
+
+    <style name="DropDownSpinnerStyle">
+        <item name="android:textSize">25dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:labelTextSize">50dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <!--<item name="android:background">@color/colorWhite</item>-->
+    </style>
+
 </resources>
